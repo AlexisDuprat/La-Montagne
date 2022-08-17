@@ -1,0 +1,107 @@
+footer {
+  background: rgb(234, 234, 234);
+  margin: 0 auto 70px;
+  width: 85%;
+  min-height: 640px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: left;
+
+  form {
+    padding: 60px 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 18px 45px 18px 45px 18px 200px 1fr;
+    gap: 18px;
+    height: 100%;
+
+    label {
+      @include title;
+      font-size: 0.7rem;
+      color: rgb(66, 66, 66);
+      display: flex;
+      align-items: flex-end;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid rgb(170, 170, 170);
+      background: transparent;
+      resize: none;
+      text-align: left;
+    }
+
+    .submit-container {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+
+  input[type="submit"] {
+    color: rgb(66, 66, 66);
+    border-color: rgb(66, 66, 66);
+    font-size: 0.7rem;
+    padding: 10px 25px;
+
+    &:hover {
+      background-color: rgb(66, 66, 66);
+      color: $color1;
+    }
+  }
+
+  .infos-contact {
+    border-left: 1px solid rgb(170, 170, 170);
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+
+    div {
+      border-bottom: 1px solid rgb(170, 170, 170);
+      display: grid;
+      grid-template-columns: 30% 70%;
+      align-items: center;
+
+      h3 {
+        @include title;
+        font-size: 0.7rem;
+        color: rgb(66, 66, 66);
+        padding: 40px;
+        text-align: left;
+      }
+
+      p {
+        text-align: left;
+        font-size: 0.8rem;
+        line-height: 26px;
+        color: gray;
+      }
+    }
+  }
+
+  .social {
+    ul {
+      display: flex;
+      li {
+        height: 40px;
+        width: 40px;
+        font-size: 0.9rem;
+        margin-right: 12px;
+
+        a {
+          border: 1px solid rgb(170, 170, 170);
+          border-radius: 50%;
+          height: 100%;
+          transition: 0.3s;
+          @include center;
+          &:hover {
+            border: 1px solid $color2;
+            background: $color2;
+            color: $color1;
+          }
+        }
+      }
+    }
+  }
+}

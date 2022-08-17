@@ -1,0 +1,65 @@
+nav {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.333);
+  color: $color1;
+  width: 85%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: space-between;
+  font-family: $font2;
+
+  .pages {
+    display: flex;
+    @include title;
+    font-size: 0.7rem;
+
+    &:hover :not(:hover) {
+      background-color: transparent;
+      color: $color1;
+    }
+
+    li {
+      display: flex;
+
+      &:hover a {
+        background-color: $color1;
+        color: $color2;
+      }
+
+      &:first-child a {
+        background-color: $color1;
+        color: $color2;
+      }
+
+      a {
+        @include center;
+        padding: 20px;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: 0.3s;
+        color: $color1;
+      }
+    }
+  }
+
+  .rs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    li {
+      padding: 20px 0;
+      a {
+        padding: 20px;
+        transition: 0.3s;
+        color: $color1;
+        &:hover {
+          background-color: $color1;
+          color: $color2;
+        }
+      }
+    }
+  }
+}

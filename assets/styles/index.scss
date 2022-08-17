@@ -1,0 +1,11 @@
+/*SETTINGS pour toutes les pages*/
+@import "./pages/settings";
+
+/*Components ponctueles*/
+@import "../styles/components/button";
+
+/*Elements complexes reutilisables*/
+@import "./layout/header";
+@import "./layout/navbar";
+@import "./layout/news";
+@import "./layout/contact";

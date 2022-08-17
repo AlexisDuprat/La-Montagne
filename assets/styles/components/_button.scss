@@ -1,0 +1,17 @@
+.btn-black {
+  text-transform: uppercase;
+  color: $color2;
+  background: transparent;
+  border: 2px solid $color2;
+  padding: 12px 38px;
+  letter-spacing: 2px;
+  font-family: $font2;
+  font-size: 0.75rem;
+  transition: 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    background: $color2;
+    color: $color1;
+  }
+}
